@@ -114,6 +114,11 @@ EXPECTED_TOOLS = [
     "compact_context",
     "list_available_tools",
     "enable_tools",
+    # data_to_inside product hook (Sprint 6.6, fork addition)
+    "read_product_journal",
+    "write_brain_observation",
+    "read_product_state",
+    "read_product_bugs",
 ]
 
 
