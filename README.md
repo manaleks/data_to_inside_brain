@@ -1,4 +1,15 @@
-# Ouroboros
+# Ouroboros · `data_to_inside_brain` fork
+
+> **Fork notice (2026-04-29):** this is a fork of [joi-lab/ouroboros](https://github.com/joi-lab/ouroboros) v6.2.0
+> patched for **Claude Code subscription only** — no OpenRouter API key,
+> no per-call cost. Variant B from the `data_to_inside` integration plan.
+> The only changed file is [`ouroboros/llm.py`](ouroboros/llm.py) (LLM
+> client now goes through `claude-agent-sdk` against a local `claude`
+> CLI). Public contract preserved: `chat()`, `vision_query()`,
+> `default_model()`, `available_models()`, `add_usage()`. Limitations
+> documented at the top of [`ouroboros/llm.py`](ouroboros/llm.py).
+> Smoke verified: 129/129 tests pass, live `chat()` against Claude Opus
+> 4.7 returns text + tool_calls correctly.
 
 > **New version available:** [Ouroboros Desktop](https://github.com/joi-lab/ouroboros-desktop) — native macOS app with web UI and local model support. This repo is the original Colab/Telegram version.
 
