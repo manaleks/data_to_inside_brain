@@ -1,5 +1,14 @@
+# data_to_inside_brain — fork of joi-lab/ouroboros, patched 2026-04-29 for
+# Claude Code subscription (variant B). See ouroboros/llm.py header for full
+# rationale and limitations.
 
-openai>=1.0.0
+# Primary LLM transport — replaces openai>=1.0.0 / OpenRouter HTTP path.
+claude-agent-sdk>=0.1.69
+
+# Kept: OpenRouter pricing endpoint is unused (vacuous now), but other modules
+# (browser tooling, GitHub API helpers) still import requests directly.
 requests
+
+# Browser automation — used by ouroboros/tools/browser.py.
 playwright
 playwright-stealth
